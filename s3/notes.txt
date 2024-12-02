@@ -1,0 +1,24 @@
+S3: 
+Simple storage service.
+→ store the data and retrieve the data from anywhere. 
+—> object storage service. 
+
+Static applications- simple applications that doesn’t have backend java, nodejs and db 
+Static js files 
+
+Why choose s3 over ec2 for static applications ?
+
+— > charges are  less when compared to ec2.
+—> project data , any data you can store. 
+
+Storage classes: 
+
+1. Standard : frequently accessed data(high availability) -  availability - 99.99%
+2. Intelligent-Tiering - 
+3. Standard-IA-  
+4. One Zone-IA : 
+5. Glacier
+6. S3 Glacier Deep Archive
+
+
+
