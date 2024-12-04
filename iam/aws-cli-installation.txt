@@ -1,0 +1,17 @@
+Installation of aws-cli in ubuntu:
+1. Download the installer:
+
+# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+2. unzip the installer
+
+# sudo unzip awscliv2.zip 
+
+3. Run the Installer:
+
+# sudo ./aws/install
+
+4. Verify the installation:
+
+# aws --version 
+
