@@ -1,0 +1,32 @@
+Linux commands:
+
+
+Here’s a list of commonly used Linux commands, categorized for convenience:
+File and Directory Management
+ls - List directory contents.
+Example: ls -l (detailed list)
+cd - Change directory.
+Example: cd /home/user
+pwd - Print working directory (current location).
+mkdir - Create a new directory.
+Example: mkdir myfolder
+rm - Remove files or directories.
+Example: rm file.txt, rm -r folder/
+cp - Copy files or directories.
+Example: cp source.txt dest.txt
+mv - Move or rename files or directories.
+Example: mv file.txt newfile.txt
+
+
+
+File Viewing and Editing
+cat - View file contents.
+Example: cat file.txt
+less - View file contents one page at a time.
+Example: less file.txt
+nano - Open a file in the nano text editor.
+Example: nano file.txt
+vim - Open a file in the Vim text editor.
+Example: vim file.txt
+touch - Create an empty file.
+Example: touch newfile.txt
