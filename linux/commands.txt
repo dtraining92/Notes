@@ -30,3 +30,22 @@ vim - Open a file in the Vim text editor.
 Example: vim file.txt
 touch - Create an empty file.
 Example: touch newfile.txt
+
+
+System information: 
+
+Uname- displays system information. 
+ Example: uname -a 
+
+Top: shows running processes 
+Used for the troubleshooting. 
+
+Free - display memory usage. 
+Df - disk space usage. 
+
+Permissions:
+
+chmod - change file permission. 
+Example: chmod 755 filename 
+Chown - change file ownership .
+
