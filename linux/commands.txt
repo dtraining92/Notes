@@ -48,4 +48,46 @@ Permissions:
 chmod - change file permission. 
 Example: chmod 755 filename 
 Chown - change file ownership .
+Chown - change file ownership .
+          Example: chown -R jenkins:jenkins  /path/to/directory. 
+
+
+Networking
+ping - Test network connectivity.
+Example: ping google.com
+curl - Transfer data from or to a server.
+Example: curl https://example.com
+Example: Download files from url 
+Curl -o filename.txt example.com 
+wget - Download files from the internet.
+Example: wget https://example.com/file.zip
+ifconfig or ip a - View network interfaces.
+netstat - Display network connections, routing tables, and interface statistics.
+Example: netstat -tuln (list listening ports)
+         T: tcp connections
+         -u : UDP onnections
+         -l : listening ports
+         -n: Numeric addresses 
+
+Example: netstat -an | grep 80 
+
+Lsof:  used to list processes using port 8080
+ Example: lsof -i :8080
+Process Management
+ps - Display currently running processes.
+Example: ps aux | grep nginx
+kill - Terminate a process.
+Example: kill 1234 (use pid from ps)
+killall - Kill processes by name.
+Example: killall firefoxSearching
+find - Search for files.
+Example: find / -name file.txt
+
+grep - Search within files.
+Example: grep 'text' file.txt
+Example: pas aux | grep nginx
+
+Locate - fast file search
+Example: locate test.txt
+
 
