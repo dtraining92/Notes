@@ -104,6 +104,9 @@ zip - Compress files.
 Example: zip archive.zip file.txt
 unzip - Extract files from a zip archive.
 
+Link for tar file:   https://tomcat.apache.org/download-10.cgi
+
+
 User Management
 whoami - Display current username.
 adduser - Add a new user.
