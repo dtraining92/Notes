@@ -91,3 +91,30 @@ Locate - fast file search
 Example: locate test.txt
 
 
+
+Compression and Archiving
+tar - Create or extract archives.
+Example: tar -czvf archive.tar.gz folder/ (create)
+c : create new archive
+V : verbose
+F: archive file name 
+   Untar: 
+   Example: tar -xvf archive.tar.gz foldername 
+zip - Compress files.
+Example: zip archive.zip file.txt
+unzip - Extract files from a zip archive.
+
+User Management
+whoami - Display current username.
+adduser - Add a new user.
+passwd - Change user password.
+
+
+Copy: 
+Example: cp test.txt test1.txt
+
+Source copy: 
+Scp 
+scp -i /Path/To/pem/keypair.pem -r pod1.yml ubuntu@ec2-54-161-33-114.compute-1.amazonaws.com:/home/ubuntu/
+
+
