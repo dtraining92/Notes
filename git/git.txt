@@ -1,0 +1,15 @@
+Git: 
+
+Git is a distributed version control, which will help store the code over the internet. Which will track the code changes during software development. 
+Maintain the history of our project and manage our code.
+
+Git commands: 
+
+Git init
+Git add .
+Git status
+Git commit -m “sometext”
+ Git push -
+Credentials : email address
+Token generation: 
+Git clone 
