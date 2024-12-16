@@ -1,0 +1,6 @@
+1. install git.
+2. git global configuration of the credentials
+3. git clone - pull the code and push the code by adding new files
+4. Create git branche- with the name: Branch1 and 2nd branch with name: Branch2
+5. Create files in branch 1 
+6. merge Branch 1 with Branch2 
