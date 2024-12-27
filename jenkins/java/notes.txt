@@ -1,0 +1,44 @@
+
+
+---> Installation of java:
+sudo apt-get update && sudo apt install openjdk-17-jdk -y
+
+java --version
+
+---> install maven:
+sudo apt install maven -y
+
+---> Clone the repo :
+#git clone https://github.com/dtraining92/java-docker.git
+#cd java-docker/
+#mvn clean install package 
+
+---> installa apache tomcat version; 10.1.34:
+# sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.34/bin/apache-tomcat-10.1.34.tar.gz
+
+# sudo tar -xvf apache-tomcat-10.1.34.tar.gz
+# sudo mv apache-tomcat-10.1.34.tar.gz tomcat 
+
+----> Create a owner and group:
+
+# sudo chown -R tomcat:tomcat /opt/tomcat/*
+# sudo chmod -R 755  /opt/tomcat/*
+
+----> Start the apache-tomcat service:
+
+# cd /opt/tomcat/bin/
+# sudo ./startup.sh
+
+Once the tomcat is started 
+
+---> deploy the .war file to the tomcat:
+# sudo mv my-webapp-1.0-SNAPSHOT* /opt/tomcat/webapps/
+
+---> Check the application-frontend:
+# ipv4ipaddress:8080/my-webapp-1.0-SNAPSHOT
+
+----> check the backend-application:
+
+# ipv4ipaddress:8080/my-webapp-1.0-SNAPSHOT/app/
+
+
