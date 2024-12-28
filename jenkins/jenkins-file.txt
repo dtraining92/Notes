@@ -1,0 +1,2 @@
+----> To copy the .war to the target server: 
+# scp -o StrictHostKeyChecking=no -i /Users/dillikarchaitanya/Downloads/j-keypair.pem -r  /Users/dillikarchaitanya/.jenkins/workspace/java/target/my-webapp-1.0-SNAPSHOT* ubuntu@e2.compute-1.amazon.com:/opt/tomcat/webapps/
