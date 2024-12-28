@@ -1,2 +1,22 @@
+Jenkins Configuration:
+
+Maven conf:
+
+1. Go to ---> manage jenkins---> tools---> Maven installations,
+
+2. add Maven Name and MAVEN_HOME path.
+
+Java conf: 
+
+1. Go to ---> manage jenkins---> tools--->JDK installations
+2. add JDK name and JAVA_HOME path. 
+
+
+Add git credentials:
+
+1. Manage jenkins--> credentials---> add credentials ---> add github token by selecting username and password. 
+
+
+
 ----> To copy the .war to the target server: 
 # scp -o StrictHostKeyChecking=no -i /Users/dillikarchaitanya/Downloads/j-keypair.pem -r  /Users/dillikarchaitanya/.jenkins/workspace/java/target/my-webapp-1.0-SNAPSHOT* ubuntu@e2.compute-1.amazon.com:/opt/tomcat/webapps/
