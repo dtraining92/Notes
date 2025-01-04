@@ -1,0 +1,21 @@
+#!/bin/bash
+# Ensuring Docker CLI path
+export PATH=$PATH:/opt/homebrew/bin
+
+# Remove existing Docker config file
+rm -f ~/.docker/config.json
+
+# Login to Docker Hub
+echo "docker-token" | docker login -u chaitanya751293 --password-stdin
+
+# Pull the Ubuntu image
+docker pull ubuntu:20.04
+
+# Build the Docker image
+docker build -t java-application . || { echo "Docker build failed!"; exit 1; }
+
+# Tag the Docker image
+docker tag java-application chaitanya751293/java-project:java-application
+
+# Push the image to Docker Hub
+docker push chaitanya751293/java-project:java-application || { echo "Docker push failed!"; exit 1; }
