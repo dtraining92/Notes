@@ -1,0 +1,20 @@
+ # Create a docker network
+1. docker network create <network-name>
+  
+ # check the docker networks
+2. docker network ls
+  
+ # Connect a container to the network 
+3. docker network connect <network-name> <container-id/container-name>
+  
+  # Inspect the network 
+4. docker network inspect <network-name>
+  
+  # Inspect the container 
+5. docker inspect <container-id/container-name>
+  
+  # to get into the container 
+6. docker exec -it <container-id/container-name> sh
+
+  # Run a container on a specific network
+7. docker run --network <network-name> <image_name>
