@@ -1,12 +1,25 @@
 #!/bin/bash
+
+set -x  # Enable debugging
+
 # Ensuring Docker CLI path
 export PATH=$PATH:/opt/homebrew/bin
 
 # Remove existing Docker config file
 rm -f ~/.docker/config.json
 
+#Get Docker_pat from first argument
+echo "DOCKER_PAT=$DOCKER_PAT"
+echo "DOCKER_USERNAME=$DOCKER_USERNAME"
+
+# Check if the Docker PAT argument is provided
+if [ -z "$DOCKER_USERNAME" ] || [ -z "$DOCKER_PAT" ]; then
+    echo "Error: Docker PAT is missing. Provide it as the first argument."
+    exit 1
+fi
+
 # Login to Docker Hub
-echo "docker-token" | docker login -u chaitanya751293 --password-stdin
+echo $DOCKER_PAT | docker login -u $DOCKER_USERNAME --password-stdin
 
 # Pull the Ubuntu image
 docker pull ubuntu:20.04
