@@ -31,3 +31,5 @@ spec:
 --- kubectl rollout status deployment node-app-deployment
 --- kubectl rollout undo deployment node-app-deployment
 --- kubectl scale deployment node-app-deployment --replicas=5
+To check which pod is using which docker image:
+kubectl get pods -l app=node-app -o=jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.spec.containers[*].image}{"\n"}{end}'
