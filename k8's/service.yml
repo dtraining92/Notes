@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-app-service
+  labels:
+    app: java-app
+spec:
+  selector:
+    app: java-app
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+
+
+---Commands: 
+
+--- kubectl apply -f service.yml
+--- kubectl get svc java-app-service
+Port-forward without a service:
+---kubectl port-forward svc/java-app-service 8080:8080
+For LB to get a external-IP use minikube tunnel:
+
+--- Run <minikube tunnel> command 
+
+To see external-ip run command;
+--- kubectl get svc java-app-service
+
+in the browser;
+ http://externalip:8080
